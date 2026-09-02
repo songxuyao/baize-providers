@@ -1,6 +1,96 @@
 # Auto-generated from cc-switch by scripts/extract_ccswitch_presets.py
 # Do NOT edit by hand — re-run the script after cc-switch updates.
 # Total: 99 unique vendors (536 raw cc-switch + 13 hardcoded).
+- id: deepseek
+  name: "DeepSeek"
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://api.deepseek.com
+  homepage: https://deepseek.com
+  notes: "from=baize-hardcoded"
+  type: official
+- id: doubao
+  name: "ByteDance Doubao"
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://ark.cn-beijing.volces.com/api/v3
+  homepage: https://www.volcengine.com/product/doubao
+  notes: "from=baize-hardcoded"
+  type: official
+- id: moonshot
+  name: "Moonshot Kimi"
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://api.moonshot.cn
+  homepage: https://moonshot.cn
+  notes: "from=baize-hardcoded"
+  type: official
+- id: qwen
+  name: "Alibaba Qwen"
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://dashscope.aliyuncs.com/compatible-mode
+  homepage: https://qwen.ai
+  notes: "from=baize-hardcoded"
+  type: official
+- id: yi
+  name: "01.AI Yi"
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://api.lingyiwanwu.com/v1
+  homepage: https://www.lingyiwanwu.com
+  notes: "from=baize-hardcoded"
+  type: official
+- id: zhipu
+  name: "Zhipu GLM"
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://open.bigmodel.cn/api/paas/v4
+  homepage: https://zhipuai.cn
+  notes: "from=baize-hardcoded"
+  type: official
+- id: anthropic
+  name: "Anthropic"
+  category: official
+  region: us
+  api_format: anthropic
+  endpoint: https://api.anthropic.com
+  homepage: https://anthropic.com
+  notes: "from=baize-hardcoded"
+  type: official
+- id: google
+  name: "Google Gemini"
+  category: official
+  region: us
+  api_format: gemini
+  endpoint: https://generativelanguage.googleapis.com
+  homepage: https://ai.google.dev
+  notes: "from=baize-hardcoded"
+  type: official
+- id: openai
+  name: "OpenAI"
+  category: official
+  region: us
+  api_format: openai
+  endpoint: https://api.openai.com
+  homepage: https://openai.com
+  notes: "from=baize-hardcoded"
+  type: official
+- id: azure-openai
+  name: "Azure OpenAI"
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: https://YOUR_RESOURCE.openai.azure.com
+  homepage: https://azure.microsoft.com/en-us/products/ai-services/openai-service
+  notes: "from=baize-hardcoded"
+  type: official
 - id: compshare
   name: "Compshare"
   category: aggregator
@@ -253,15 +343,6 @@
   homepage: https://amux.ai
   notes: "from=claude,openclaw"
   type: relay
-- id: openrouter
-  name: "OpenRouter"
-  category: aggregator
-  region: us
-  api_format: anthropic
-  endpoint: https://openrouter.ai/api
-  homepage: https://openrouter.ai
-  notes: "from=claude,openclaw"
-  type: aggregator
 - id: agent-plan
   name: "火山 Agent Plan"
   category: cn_official
@@ -307,24 +388,6 @@
   homepage: https://www.volcengine.com/activity/codingplan?ac=MMAP8JTTCAQ2&rc=6J6FV5N2&utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch
   notes: "from=claude,openclaw"
   type: relay
-- id: deepseek
-  name: "DeepSeek"
-  category: cn_official
-  region: cn
-  api_format: openai
-  endpoint: https://api.deepseek.com
-  homepage: https://deepseek.com
-  notes: "from=baize-hardcoded"
-  type: official
-- id: doubao
-  name: "ByteDance Doubao"
-  category: cn_official
-  region: cn
-  api_format: openai
-  endpoint: https://ark.cn-beijing.volces.com/api/v3
-  homepage: https://www.volcengine.com/product/doubao
-  notes: "from=baize-hardcoded"
-  type: official
 - id: doubaoseed
   name: "DouBaoSeed"
   category: cn_official
@@ -352,24 +415,6 @@
   homepage: https://www.kimi.com/code/?aff=cc-switch
   notes: "from=claude,openclaw"
   type: relay
-- id: moonshot
-  name: "Moonshot Kimi"
-  category: cn_official
-  region: cn
-  api_format: openai
-  endpoint: https://api.moonshot.cn
-  homepage: https://moonshot.cn
-  notes: "from=baize-hardcoded"
-  type: official
-- id: qwen
-  name: "Alibaba Qwen"
-  category: cn_official
-  region: cn
-  api_format: openai
-  endpoint: https://dashscope.aliyuncs.com/compatible-mode
-  homepage: https://qwen.ai
-  notes: "from=baize-hardcoded"
-  type: official
 - id: qwencloud-for-coding
   name: "QwenCloud For Coding"
   category: cn_official
@@ -388,24 +433,6 @@
   homepage: https://cloud.tencent.com/product/tokenhub
   notes: "from=claude,openclaw"
   type: relay
-- id: yi
-  name: "01.AI Yi"
-  category: cn_official
-  region: cn
-  api_format: openai
-  endpoint: https://api.lingyiwanwu.com/v1
-  homepage: https://www.lingyiwanwu.com
-  notes: "from=baize-hardcoded"
-  type: official
-- id: zhipu
-  name: "Zhipu GLM"
-  category: cn_official
-  region: cn
-  api_format: openai
-  endpoint: https://open.bigmodel.cn/api/paas/v4
-  homepage: https://zhipuai.cn
-  notes: "from=baize-hardcoded"
-  type: official
 - id: zhipu-glm
   name: "Zhipu GLM"
   category: cn_official
@@ -595,33 +622,6 @@
   homepage: https://z.ai
   notes: "from=claude,openclaw"
   type: relay
-- id: anthropic
-  name: "Anthropic"
-  category: official
-  region: us
-  api_format: anthropic
-  endpoint: https://api.anthropic.com
-  homepage: https://anthropic.com
-  notes: "from=baize-hardcoded"
-  type: official
-- id: google
-  name: "Google Gemini"
-  category: official
-  region: us
-  api_format: gemini
-  endpoint: https://generativelanguage.googleapis.com
-  homepage: https://ai.google.dev
-  notes: "from=baize-hardcoded"
-  type: official
-- id: openai
-  name: "OpenAI"
-  category: official
-  region: us
-  api_format: openai
-  endpoint: https://api.openai.com
-  homepage: https://openai.com
-  notes: "from=baize-hardcoded"
-  type: official
 - id: aicodemirror
   name: "AICodeMirror"
   category: third_party
@@ -685,15 +685,6 @@
   homepage: https://aws.amazon.com/bedrock/
   notes: "from=claude"
   type: relay
-- id: azure-openai
-  name: "Azure OpenAI"
-  category: third_party
-  region: global
-  api_format: openai
-  endpoint: https://YOUR_RESOURCE.openai.azure.com
-  homepage: https://azure.microsoft.com/en-us/products/ai-services/openai-service
-  notes: "from=baize-hardcoded"
-  type: official
 - id: claudecn
   name: "ClaudeCN"
   category: third_party
@@ -757,15 +748,6 @@
   homepage: https://github.com/features/copilot
   notes: "from=claudeDesktop,claude"
   type: relay
-- id: lmstudio
-  name: "LM Studio (Local)"
-  category: third_party
-  region: global
-  api_format: openai
-  endpoint: http://localhost:1234/v1
-  homepage: https://lmstudio.ai
-  notes: "from=baize-hardcoded"
-  type: local
 - id: micu
   name: "Micu"
   category: third_party
@@ -775,15 +757,6 @@
   homepage: https://www.micuapi.ai
   notes: "from=claude,openclaw"
   type: relay
-- id: ollama
-  name: "Ollama (Local)"
-  category: third_party
-  region: global
-  api_format: openai
-  endpoint: http://localhost:11434/v1
-  homepage: https://ollama.com
-  notes: "from=baize-hardcoded"
-  type: local
 - id: opencode-go
   name: "OpenCode Go"
   category: third_party
@@ -856,15 +829,6 @@
   homepage: https://sudocode.us
   notes: "from=claude,codex"
   type: relay
-- id: vllm
-  name: "vLLM (Local)"
-  category: third_party
-  region: global
-  api_format: openai
-  endpoint: http://localhost:8000/v1
-  homepage: https://docs.vllm.ai
-  notes: "from=baize-hardcoded"
-  type: local
 - id: gemini-native
   name: "Gemini Native"
   category: third_party
@@ -892,3 +856,39 @@
   homepage: https://x.ai/grok
   notes: "from=codex"
   type: relay
+- id: lmstudio
+  name: "LM Studio (Local)"
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: http://localhost:1234/v1
+  homepage: https://lmstudio.ai
+  notes: "from=baize-hardcoded"
+  type: local
+- id: ollama
+  name: "Ollama (Local)"
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: http://localhost:11434/v1
+  homepage: https://ollama.com
+  notes: "from=baize-hardcoded"
+  type: local
+- id: vllm
+  name: "vLLM (Local)"
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: http://localhost:8000/v1
+  homepage: https://docs.vllm.ai
+  notes: "from=baize-hardcoded"
+  type: local
+- id: openrouter
+  name: "OpenRouter"
+  category: aggregator
+  region: us
+  api_format: anthropic
+  endpoint: https://openrouter.ai/api
+  homepage: https://openrouter.ai
+  notes: "from=claude,openclaw"
+  type: aggregator
