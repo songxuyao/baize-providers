@@ -1,0 +1,207 @@
+# Baize Provider Presets — 厂商预设列表
+#
+# Schema 与服务端 Baize.Server/Catalog/ProviderPreset.cs 一致。
+# 必填字段:id / name / category / region / apiFormat / endpoint
+# 可选字段:homepage / logoUrl / modelsCatalogUrl / notes
+#
+# category 枚举:official | cn_official | aggregator | third_party
+# region 枚举:cn | us | eu | global
+# apiFormat 枚举:openai | anthropic | gemini
+#
+# 提交 PR 之前请确认 endpoint 可达,apiFormat 与厂商实际协议匹配。
+
+# === 海外官方 ===
+- id: openai
+  name: OpenAI
+  category: official
+  region: us
+  api_format: openai
+  endpoint: https://api.openai.com
+  homepage: https://openai.com
+  notes: GPT-5 / GPT-4o / o1 系列
+- id: anthropic
+  name: Anthropic
+  category: official
+  region: us
+  api_format: anthropic
+  endpoint: https://api.anthropic.com
+  homepage: https://anthropic.com
+  notes: Claude Sonnet / Opus / Haiku
+- id: google
+  name: Google Gemini
+  category: official
+  region: us
+  api_format: gemini
+  endpoint: https://generativelanguage.googleapis.com
+  homepage: https://ai.google.dev
+  notes: Gemini 2.0 / 2.5 系列
+
+# === 国内官方 ===
+- id: deepseek
+  name: DeepSeek
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://api.deepseek.com
+  homepage: https://deepseek.com
+  notes: 国产编程首选,OpenAI 兼容
+- id: moonshot
+  name: Moonshot Kimi
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://api.moonshot.cn
+  homepage: https://moonshot.cn
+  notes: 长上下文,OpenAI 兼容
+- id: qwen
+  name: Alibaba Qwen
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://dashscope.aliyuncs.com/compatible-mode
+  homepage: https://qwen.ai
+  notes: 通义千千,OpenAI 兼容模式
+- id: zhipu
+  name: Zhipu GLM
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://open.bigmodel.cn/api/paas/v4
+  homepage: https://zhipuai.cn
+  notes: 智谱 GLM-4 系列,OpenAI 兼容
+- id: yi
+  name: 01.AI Yi
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://api.lingyiwanwu.com/v1
+  homepage: https://www.lingyiwanwu.com
+  notes: 零一万物
+- id: doubao
+  name: ByteDance Doubao
+  category: cn_official
+  region: cn
+  api_format: openai
+  endpoint: https://ark.cn-beijing.volces.com/api/v3
+  homepage: https://www.volcengine.com/product/doubao
+  notes: 字节豆包,火山引擎,OpenAI 兼容
+
+# === 聚合 API 网关 (OpenAI 兼容) ===
+- id: openrouter
+  name: OpenRouter
+  category: aggregator
+  region: global
+  api_format: openai
+  endpoint: https://openrouter.ai/api/v1
+  homepage: https://openrouter.ai
+  notes: 多模型聚合路由,OpenAI 兼容
+- id: siliconflow
+  name: SiliconFlow
+  category: aggregator
+  region: cn
+  api_format: openai
+  endpoint: https://api.siliconflow.cn/v1
+  homepage: https://siliconflow.cn
+  notes: 硅基流动,国内聚合,OpenAI 兼容
+- id: together
+  name: Together AI
+  category: aggregator
+  region: us
+  api_format: openai
+  endpoint: https://api.together.xyz/v1
+  homepage: https://together.ai
+  notes: 开源模型聚合
+- id: fireworks
+  name: Fireworks AI
+  category: aggregator
+  region: us
+  api_format: openai
+  endpoint: https://api.fireworks.ai/inference/v1
+  homepage: https://fireworks.ai
+  notes: 快速推理,OpenAI 兼容
+- id: groq
+  name: Groq
+  category: aggregator
+  region: us
+  api_format: openai
+  endpoint: https://api.groq.com/openai/v1
+  homepage: https://groq.com
+  notes: 超快 LPU 推理,OpenAI 兼容
+
+# === 第三方厂商(海外) ===
+- id: mistral
+  name: Mistral AI
+  category: third_party
+  region: eu
+  api_format: openai
+  endpoint: https://api.mistral.ai/v1
+  homepage: https://mistral.ai
+  notes: 法语,Mixtral / Mistral Large
+- id: cohere
+  name: Cohere
+  category: third_party
+  region: us
+  api_format: openai
+  endpoint: https://api.cohere.ai/v1
+  homepage: https://cohere.com
+  notes: Command R+ 系列
+- id: perplexity
+  name: Perplexity
+  category: third_party
+  region: us
+  api_format: openai
+  endpoint: https://api.perplexity.ai
+  homepage: https://perplexity.ai
+  notes: 搜索增强,OpenAI 兼容
+- id: xai
+  name: xAI Grok
+  category: third_party
+  region: us
+  api_format: openai
+  endpoint: https://api.x.ai/v1
+  homepage: https://x.ai
+  notes: Grok 系列
+- id: meta
+  name: Meta Llama
+  category: third_party
+  region: us
+  api_format: openai
+  endpoint: https://api.meta.ai/v1
+  homepage: https://llama.com
+  notes: 需通过第三方代理
+
+# === 自部署 / 自定义网关模板 ===
+- id: ollama
+  name: Ollama (Local)
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: http://localhost:11434/v1
+  homepage: https://ollama.com
+  notes: 本地自托管,默认 11434 端口,OpenAI 兼容
+- id: lmstudio
+  name: LM Studio (Local)
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: http://localhost:1234/v1
+  homepage: https://lmstudio.ai
+  notes: 本地自托管,默认 1234 端口
+- id: vllm
+  name: vLLM (Local)
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: http://localhost:8000/v1
+  homepage: https://docs.vllm.ai
+  notes: 本地自托管推理服务
+
+# === Azure OpenAI(用 OpenAI 格式但单独 endpoint) ===
+- id: azure-openai
+  name: Azure OpenAI
+  category: third_party
+  region: global
+  api_format: openai
+  endpoint: https://YOUR_RESOURCE.openai.azure.com
+  homepage: https://azure.microsoft.com/en-us/products/ai-services/openai-service
+  notes: 需要替换 YOUR_RESOURCE 为实际部署名
