@@ -1,62 +1,77 @@
 # Baize Providers
 
-Baize 的远端 provider preset 目录。服务端从此仓库读取新预设；应用自带的 `providers.jsonc` bundle 仍提供离线 preset 和模型能力表。
+Baize 的远端提供商目录。服务端从此仓库读取新增预设；应用自带的 `providers.jsonc` bundle 仍提供离线目录和模型能力表。
 
 ## 数据源
-
-服务端从以下 raw URL 拉取 provider presets：
 
 ```text
 https://raw.githubusercontent.com/songxuyao/baize-providers/main/profiles/providers.jsonc
 ```
 
-远端文件使用 JSONC，包含 provider 的 `preset` 字段。模型能力数据由 Baize 应用本地 bundle 管理，不放在此仓库。
-
-## Schema
-
-`profiles/providers.jsonc` 的根节点为 `providers` 对象；provider ID 是对象键，preset 字段为 camelCase。`models` 可以省略。
+`profiles/providers.jsonc` 是 JSONC 格式的 v2 目录。根节点 `_meta.schemaVersion` 必须为 `2`；`providers` 记录目录主体，`variants` 记录可配置的接入方式。旧版 `providers` 对象键对应新版 **Variant ID**，迁移时不得更名。Provider ID 与 Variant ID 是不同命名空间，同名也不代表相同实体。
 
 ```jsonc
 {
+  "_meta": { "schemaVersion": 2 },
   "providers": {
-    "deepseek": {
+    "bailian": {
+      "name": "Bailian",
+      "catalogGroup": "cloud",
+      "homepage": "https://bailian.console.aliyun.com"
+    }
+  },
+  "variants": {
+    "bailian": {
+      "ownerProviderId": "bailian",
       "preset": {
-        "name": "DeepSeek",
-        "category": "cn_official",
+        "name": "Bailian",
+        "kind": "official",
+        "authMode": "api_key",
         "region": "cn",
-        "apiFormat": "openai",
-        "endpoint": "https://api.deepseek.com"
+        "apiFormat": "anthropic",
+        "endpoint": "https://dashscope.aliyuncs.com/apps/anthropic"
+      }
+    },
+    "bailian-for-coding": {
+      "ownerProviderId": "bailian",
+      "preset": {
+        "name": "Bailian For Coding",
+        "kind": "official",
+        "authMode": "api_key",
+        "region": "cn",
+        "apiFormat": "anthropic",
+        "endpoint": "https://coding.dashscope.aliyuncs.com/apps/anthropic"
       }
     }
   }
 }
 ```
 
-| 字段 | 类型 | 说明 |
-|---|---|---|
-| provider ID（对象键）* | string | kebab-case 唯一 ID，作为数据库主键 |
-| `preset.name` * | string | 显示名 |
-| `preset.category` * | enum | `official` / `cn_official` / `aggregator` / `third_party` / `custom` |
-| `preset.region` * | enum | `cn` / `us` / `eu` / `global` |
-| `preset.apiFormat` * | enum | `openai` / `anthropic` / `gemini` |
-| `preset.endpoint` * | URL | 厂商 API 根 URL |
-| `preset.homepage` | URL | 厂商主页 |
-| `preset.logoUrl` | URL | Logo 图标 URL |
-| `preset.modelsCatalogUrl` | URL | 模型列表专用端点 |
-| `preset.notes` | string | 备注 |
-| `preset.type` | enum | `official` / `relay` / `local` / `custom` / `aggregator` |
-| `preset.modelIds` | string[] | 可选模型 ID 列表 |
+| 字段 | 说明 |
+| --- | --- |
+| `_meta.schemaVersion` | 必须为 `2` |
+| `providers.<id>.name` | 提供商显示名 |
+| `providers.<id>.catalogGroup` | `cloud` / `local` / `custom` |
+| `providers.<id>.homepage` / `logoUrl` | 可选的官网与图标 URL |
+| `variants.<id>.ownerProviderId` | 必须引用现有 Provider；接入项 ID 独立且稳定 |
+| `variants.<id>.placements` | 可选的其他展示 Provider ID 数组；不得包含归属方或重复值 |
+| `variants.<id>.preset.name` | 接入方式显示名 |
+| `variants.<id>.preset.kind` | `official` / `relay` / `aggregator` / `local` / `custom` / `unknown` |
+| `variants.<id>.preset.authMode` | `api_key` / `local_endpoint` / `local_endpoint_key` / `chatgpt_oauth` |
+| `variants.<id>.preset.region` | `cn` / `us` / `eu` / `global` |
+| `variants.<id>.preset.apiFormat` | `openai` / `anthropic` / `gemini` / `openai_responses`；`openai` 仍表示 Chat Completions |
+| `variants.<id>.preset.endpoint` | API 根 URL |
+| `variants.<id>.preset.homepage` / `logoUrl` / `modelsCatalogUrl` / `notes` / `modelIds` | 可选的原有预设资料 |
 
-必填字段用 `*` 标记。JSONC 注释可用于说明数据；属性值仍须符合 JSON 类型。
+当前文件保留旧版预设的 `category`、`type` 字段供兼容读取；`kind` 与 `authMode` 是新版接入信息。远端目录只发布预设与展示关系，不发布模型能力、密钥或授权配置。模型的 `contextWindow`、`reasoningSupport` 和 `fastModeByEndpoint` 仍由 Baize 本地 bundle 管理。未经确认的关联不靠名称、端点或模型 ID 猜测归属。
 
-## 添加新厂商
+## 添加接入方式
 
-1. Fork 此仓库。
-2. 在 `profiles/providers.jsonc` 的 `providers` 对象中新增 provider ID 和 `preset`。
-3. 保持 provider ID 唯一，填写必填字段并验证 JSONC。
-4. 提交 PR，说明 endpoint 与厂商资料来源。
-5. 合并后，Baize 会在后续目录刷新时读取该 preset。
+1. 在 `providers` 添加新主体，或选择已存在的明确归属 Provider。
+2. 在 `variants` 添加唯一且稳定的接入项 ID；填写 `ownerProviderId` 和完整 `preset`。
+3. 如需从其他 Provider 页面发现该接入项，显式添加 `placements`，并确认所有引用存在。
+4. 保持原有 Variant ID 不变，验证 JSONC 与 Baize 的 v2 解析器，再提交 PR 说明端点与资料来源。
 
 ## License
 
-MIT — 欢迎提交 endpoint 可用且资料准确的 provider preset。
+MIT — 欢迎提交端点可用且资料准确的提供商预设。

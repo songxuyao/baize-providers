@@ -1,4 +1,4 @@
-// Provider presets for Baize. Provider IDs are map keys; model capabilities are stored in the application bundle.
+// Baize remote provider directory v2. Model capabilities stay in the application bundle.
 {
   "_meta": {
     "providerPresets": {
@@ -7,10 +7,419 @@
       "providerCount": 99,
       "sourceEntryCount": 536,
       "hardcodedCount": 13
-    }
+    },
+    "schemaVersion": 2
   },
   "providers": {
     "agent-plan": {
+      "name": "火山 Agent Plan",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.volcengine.com/activity/agentplan?ac=MMAP8JTTCAQ2&rc=6J6FV5N2&utm_source=OWO&utm_medium=devrel-1&utm_campaign=hw&utm_term=ccswitch&utm_content=hw"
+    },
+    "bailian": {
+      "name": "Bailian",
+      "catalogGroup": "cloud",
+      "homepage": "https://bailian.console.aliyun.com"
+    },
+    "bailing": {
+      "name": "BaiLing",
+      "catalogGroup": "cloud",
+      "homepage": "https://alipaytbox.yuque.com/sxs0ba/ling/get_started"
+    },
+    "coding-plan": {
+      "name": "火山 Coding Plan",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.volcengine.com/activity/codingplan?ac=MMAP8JTTCAQ2&rc=6J6FV5N2&utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "catalogGroup": "cloud",
+      "homepage": "https://deepseek.com"
+    },
+    "doubao": {
+      "name": "ByteDance Doubao",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.volcengine.com/product/doubao"
+    },
+    "doubaoseed": {
+      "name": "DouBaoSeed",
+      "catalogGroup": "cloud",
+      "homepage": "https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey?apikey=%7B%7D&utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch"
+    },
+    "kimi": {
+      "name": "Kimi",
+      "catalogGroup": "cloud",
+      "homepage": "https://platform.kimi.com?aff=cc-switch"
+    },
+    "moonshot": {
+      "name": "Moonshot Kimi",
+      "catalogGroup": "cloud",
+      "homepage": "https://moonshot.cn"
+    },
+    "qwen": {
+      "name": "Alibaba Qwen",
+      "catalogGroup": "cloud",
+      "homepage": "https://qwen.ai"
+    },
+    "qwencloud": {
+      "name": "QwenCloud",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.qwencloud.com"
+    },
+    "tencent-token-plan": {
+      "name": "Tencent Token Plan",
+      "catalogGroup": "cloud",
+      "homepage": "https://cloud.tencent.com/product/tokenhub"
+    },
+    "yi": {
+      "name": "01.AI Yi",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.lingyiwanwu.com"
+    },
+    "zhipu": {
+      "name": "Zhipu GLM",
+      "catalogGroup": "cloud",
+      "homepage": "https://zhipuai.cn"
+    },
+    "baidu-qianfan": {
+      "name": "Baidu Qianfan",
+      "catalogGroup": "cloud",
+      "homepage": "https://cloud.baidu.com/product/qianfan_modelbuilder"
+    },
+    "byteplus": {
+      "name": "BytePlus",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.byteplus.com/en/product/modelark?utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch"
+    },
+    "kat-coder": {
+      "name": "KAT-Coder",
+      "catalogGroup": "cloud",
+      "homepage": "https://console.streamlake.ai"
+    },
+    "longcat": {
+      "name": "Longcat",
+      "catalogGroup": "cloud",
+      "homepage": "https://longcat.chat/platform"
+    },
+    "minimax": {
+      "name": "MiniMax",
+      "catalogGroup": "cloud",
+      "homepage": "https://platform.minimaxi.com"
+    },
+    "stepfun": {
+      "name": "StepFun",
+      "catalogGroup": "cloud",
+      "homepage": "https://platform.stepfun.com/step-plan"
+    },
+    "stepfun-en": {
+      "name": "StepFun en",
+      "catalogGroup": "cloud",
+      "homepage": "https://platform.stepfun.ai/step-plan"
+    },
+    "tencent-hunyuan": {
+      "name": "Tencent Hunyuan",
+      "catalogGroup": "cloud",
+      "homepage": "https://cloud.tencent.com/product/tokenhub"
+    },
+    "xiaomi-mimo": {
+      "name": "Xiaomi MiMo",
+      "catalogGroup": "cloud",
+      "homepage": "https://platform.xiaomimimo.com"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "catalogGroup": "cloud",
+      "homepage": "https://anthropic.com"
+    },
+    "google": {
+      "name": "Google Gemini",
+      "catalogGroup": "cloud",
+      "homepage": "https://ai.google.dev"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "catalogGroup": "cloud",
+      "homepage": "https://openai.com"
+    },
+    "azure-openai": {
+      "name": "Azure OpenAI",
+      "catalogGroup": "cloud",
+      "homepage": "https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+    },
+    "aicodemirror": {
+      "name": "AICodeMirror",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.aicodemirror.ai"
+    },
+    "aicoding": {
+      "name": "AICoding",
+      "catalogGroup": "cloud",
+      "homepage": "https://aicoding.inc"
+    },
+    "aigocode": {
+      "name": "AIGoCode",
+      "catalogGroup": "cloud",
+      "homepage": "https://aigocode.app"
+    },
+    "apikey-fun": {
+      "name": "APIKEY.FUN",
+      "catalogGroup": "cloud",
+      "homepage": "https://apikey.fun"
+    },
+    "apinebula": {
+      "name": "APINebula",
+      "catalogGroup": "cloud",
+      "homepage": "https://apinebula.ai"
+    },
+    "aws-bedrock": {
+      "name": "Aws Bedrock",
+      "catalogGroup": "cloud",
+      "homepage": "https://aws.amazon.com/bedrock/"
+    },
+    "claudecn": {
+      "name": "ClaudeCN",
+      "catalogGroup": "cloud",
+      "homepage": "https://claudecn.top"
+    },
+    "codex": {
+      "name": "Codex",
+      "catalogGroup": "cloud",
+      "homepage": "https://openai.com/chatgpt/pricing"
+    },
+    "crazyrouter": {
+      "name": "CrazyRouter",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.crazyrouter.com"
+    },
+    "cubence": {
+      "name": "Cubence",
+      "catalogGroup": "cloud",
+      "homepage": "https://cubence.com"
+    },
+    "e-flowcode": {
+      "name": "E-FlowCode",
+      "catalogGroup": "cloud",
+      "homepage": "https://e-flowcode.cc"
+    },
+    "etok-ai": {
+      "name": "ETok.ai",
+      "catalogGroup": "cloud",
+      "homepage": "https://etok.ai"
+    },
+    "github-copilot": {
+      "name": "GitHub Copilot",
+      "catalogGroup": "cloud",
+      "homepage": "https://github.com/features/copilot"
+    },
+    "micu": {
+      "name": "Micu",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.micuapi.ai"
+    },
+    "opencode-go": {
+      "name": "OpenCode Go",
+      "catalogGroup": "cloud",
+      "homepage": "https://opencode.ai/go"
+    },
+    "packycode": {
+      "name": "PackyCode",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.packyapi.ai"
+    },
+    "patewayai": {
+      "name": "PatewayAI",
+      "catalogGroup": "cloud",
+      "homepage": "https://pateway.ai"
+    },
+    "relaxycode": {
+      "name": "RelaxyCode",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.relaxycode.com"
+    },
+    "rightcode": {
+      "name": "RightCode",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.rightapi.ai"
+    },
+    "sssaicode": {
+      "name": "SSSAiCode",
+      "catalogGroup": "cloud",
+      "homepage": "https://sssaicodeapi.com"
+    },
+    "sudocode-chat": {
+      "name": "SudoCode.chat",
+      "catalogGroup": "cloud",
+      "homepage": "https://sudocode.chat"
+    },
+    "sudocode-us": {
+      "name": "SudoCode.us",
+      "catalogGroup": "cloud",
+      "homepage": "https://sudocode.us"
+    },
+    "gemini-native": {
+      "name": "Gemini Native",
+      "catalogGroup": "cloud",
+      "homepage": "https://ai.google.dev/gemini-api"
+    },
+    "xai-grok": {
+      "name": "xAI (Grok)",
+      "catalogGroup": "cloud",
+      "homepage": "https://x.ai/grok"
+    },
+    "lmstudio": {
+      "name": "LM Studio (Local)",
+      "catalogGroup": "local",
+      "homepage": "https://lmstudio.ai"
+    },
+    "ollama": {
+      "name": "Ollama (Local)",
+      "catalogGroup": "local",
+      "homepage": "https://ollama.com"
+    },
+    "vllm": {
+      "name": "vLLM (Local)",
+      "catalogGroup": "local",
+      "homepage": "https://docs.vllm.ai"
+    },
+    "compshare": {
+      "name": "Compshare",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.compshare.cn"
+    },
+    "dmxapi": {
+      "name": "DMXAPI",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.dmxapi.cn"
+    },
+    "modelscope": {
+      "name": "ModelScope",
+      "catalogGroup": "cloud",
+      "homepage": "https://modelscope.cn"
+    },
+    "siliconflow": {
+      "name": "SiliconFlow",
+      "catalogGroup": "cloud",
+      "homepage": "https://siliconflow.cn"
+    },
+    "teamorouter": {
+      "name": "TeamoRouter",
+      "catalogGroup": "cloud",
+      "homepage": "https://teamorouter.cn"
+    },
+    "a6api": {
+      "name": "A6API",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.a6api.com"
+    },
+    "aihubmix": {
+      "name": "AiHubMix",
+      "catalogGroup": "cloud",
+      "homepage": "https://aihubmix.com"
+    },
+    "atlascloud": {
+      "name": "AtlasCloud",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.atlascloud.ai/console/coding-plan"
+    },
+    "ccsub": {
+      "name": "CCSub",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.ccsub.net"
+    },
+    "cherryin": {
+      "name": "CherryIN",
+      "catalogGroup": "cloud",
+      "homepage": "https://open.cherryin.ai"
+    },
+    "claudeapi": {
+      "name": "ClaudeAPI",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.apito.ai"
+    },
+    "code0": {
+      "name": "Code0",
+      "catalogGroup": "cloud",
+      "homepage": "https://code0.ai"
+    },
+    "fennoai": {
+      "name": "FennoAI",
+      "catalogGroup": "cloud",
+      "homepage": "https://api.fenno.ai"
+    },
+    "jiekou-ai": {
+      "name": "JieKou AI",
+      "catalogGroup": "cloud",
+      "homepage": "https://jiekou.ai/#model-library"
+    },
+    "novita-ai": {
+      "name": "Novita AI",
+      "catalogGroup": "cloud",
+      "homepage": "https://novita.ai"
+    },
+    "nvidia": {
+      "name": "Nvidia",
+      "catalogGroup": "cloud",
+      "homepage": "https://build.nvidia.com"
+    },
+    "pipellm": {
+      "name": "PIPELLM",
+      "catalogGroup": "cloud",
+      "homepage": "https://code.pipellm.ai"
+    },
+    "ppio": {
+      "name": "PPIO",
+      "catalogGroup": "cloud",
+      "homepage": "https://ppio.com"
+    },
+    "qiniu": {
+      "name": "Qiniu",
+      "catalogGroup": "cloud",
+      "homepage": "https://s.qiniu.com/nMvAvy"
+    },
+    "runapi": {
+      "name": "RunAPI",
+      "catalogGroup": "cloud",
+      "homepage": "https://runapi.host"
+    },
+    "shengsuanyun": {
+      "name": "Shengsuanyun",
+      "catalogGroup": "cloud",
+      "homepage": "https://www.shengsuanyun.com/?from=CH_4HHXMRYF"
+    },
+    "subrouter": {
+      "name": "SubRouter",
+      "catalogGroup": "cloud",
+      "homepage": "https://subrouter.ai"
+    },
+    "therouter": {
+      "name": "TheRouter",
+      "catalogGroup": "cloud",
+      "homepage": "https://therouter.ai"
+    },
+    "xycai": {
+      "name": "XycAi",
+      "catalogGroup": "cloud",
+      "homepage": "https://xycai.us"
+    },
+    "zetaapi": {
+      "name": "ZetaAPI",
+      "catalogGroup": "cloud",
+      "homepage": "https://zetaapi.ai"
+    },
+    "amux": {
+      "name": "Amux",
+      "catalogGroup": "cloud",
+      "homepage": "https://amux.ai"
+    },
+    "openrouter": {
+      "name": "OpenRouter",
+      "catalogGroup": "cloud",
+      "homepage": "https://openrouter.ai"
+    }
+  },
+  "variants": {
+    "agent-plan": {
+      "ownerProviderId": "agent-plan",
       "preset": {
         "name": "火山 Agent Plan",
         "category": "cn_official",
@@ -19,10 +428,13 @@
         "endpoint": "https://ark.cn-beijing.volces.com/api/plan",
         "homepage": "https://www.volcengine.com/activity/agentplan?ac=MMAP8JTTCAQ2&rc=6J6FV5N2&utm_source=OWO&utm_medium=devrel-1&utm_campaign=hw&utm_term=ccswitch&utm_content=hw",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "bailian": {
+      "ownerProviderId": "bailian",
       "preset": {
         "name": "Bailian",
         "category": "cn_official",
@@ -31,10 +443,13 @@
         "endpoint": "https://dashscope.aliyuncs.com/apps/anthropic",
         "homepage": "https://bailian.console.aliyun.com",
         "notes": "from=claude,opencode",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "bailian-for-coding": {
+      "ownerProviderId": "bailian",
       "preset": {
         "name": "Bailian For Coding",
         "category": "cn_official",
@@ -43,10 +458,13 @@
         "endpoint": "https://coding.dashscope.aliyuncs.com/apps/anthropic",
         "homepage": "https://bailian.console.aliyun.com",
         "notes": "from=claude,hermes",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "bailing": {
+      "ownerProviderId": "bailing",
       "preset": {
         "name": "BaiLing",
         "category": "cn_official",
@@ -55,10 +473,13 @@
         "endpoint": "https://api.tbox.cn/api/anthropic",
         "homepage": "https://alipaytbox.yuque.com/sxs0ba/ling/get_started",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "coding-plan": {
+      "ownerProviderId": "coding-plan",
       "preset": {
         "name": "火山 Coding Plan",
         "category": "cn_official",
@@ -67,10 +488,13 @@
         "endpoint": "https://ark.cn-beijing.volces.com/api/coding",
         "homepage": "https://www.volcengine.com/activity/codingplan?ac=MMAP8JTTCAQ2&rc=6J6FV5N2&utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "deepseek": {
+      "ownerProviderId": "deepseek",
       "preset": {
         "name": "DeepSeek",
         "category": "cn_official",
@@ -79,10 +503,13 @@
         "endpoint": "https://api.deepseek.com",
         "homepage": "https://deepseek.com",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "doubao": {
+      "ownerProviderId": "doubao",
       "preset": {
         "name": "ByteDance Doubao",
         "category": "cn_official",
@@ -91,10 +518,13 @@
         "endpoint": "https://ark.cn-beijing.volces.com/api/v3",
         "homepage": "https://www.volcengine.com/product/doubao",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "doubaoseed": {
+      "ownerProviderId": "doubaoseed",
       "preset": {
         "name": "DouBaoSeed",
         "category": "cn_official",
@@ -103,10 +533,13 @@
         "endpoint": "https://ark.cn-beijing.volces.com/api/compatible",
         "homepage": "https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey?apikey=%7B%7D&utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "kimi": {
+      "ownerProviderId": "kimi",
       "preset": {
         "name": "Kimi",
         "category": "cn_official",
@@ -115,10 +548,13 @@
         "endpoint": "https://api.moonshot.cn/anthropic",
         "homepage": "https://platform.kimi.com?aff=cc-switch",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "kimi-for-coding": {
+      "ownerProviderId": "kimi",
       "preset": {
         "name": "Kimi For Coding",
         "category": "cn_official",
@@ -127,10 +563,13 @@
         "endpoint": "https://api.kimi.com/coding/",
         "homepage": "https://www.kimi.com/code/?aff=cc-switch",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "moonshot": {
+      "ownerProviderId": "moonshot",
       "preset": {
         "name": "Moonshot Kimi",
         "category": "cn_official",
@@ -139,10 +578,13 @@
         "endpoint": "https://api.moonshot.cn",
         "homepage": "https://moonshot.cn",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "qwen": {
+      "ownerProviderId": "qwen",
       "preset": {
         "name": "Alibaba Qwen",
         "category": "cn_official",
@@ -151,10 +593,13 @@
         "endpoint": "https://dashscope.aliyuncs.com/compatible-mode",
         "homepage": "https://qwen.ai",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "qwencloud-for-coding": {
+      "ownerProviderId": "qwencloud",
       "preset": {
         "name": "QwenCloud For Coding",
         "category": "cn_official",
@@ -163,10 +608,13 @@
         "endpoint": "https://coding-intl.dashscope.aliyuncs.com/apps/anthropic",
         "homepage": "https://www.qwencloud.com",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-token-plan": {
+      "ownerProviderId": "tencent-token-plan",
       "preset": {
         "name": "Tencent Token Plan",
         "category": "cn_official",
@@ -175,10 +623,13 @@
         "endpoint": "https://api.lkeap.cloud.tencent.com/plan/anthropic",
         "homepage": "https://cloud.tencent.com/product/tokenhub",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "yi": {
+      "ownerProviderId": "yi",
       "preset": {
         "name": "01.AI Yi",
         "category": "cn_official",
@@ -187,10 +638,13 @@
         "endpoint": "https://api.lingyiwanwu.com/v1",
         "homepage": "https://www.lingyiwanwu.com",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "zhipu": {
+      "ownerProviderId": "zhipu",
       "preset": {
         "name": "Zhipu GLM",
         "category": "cn_official",
@@ -199,10 +653,13 @@
         "endpoint": "https://open.bigmodel.cn/api/paas/v4",
         "homepage": "https://zhipuai.cn",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "zhipu-glm": {
+      "ownerProviderId": "zhipu",
       "preset": {
         "name": "Zhipu GLM",
         "category": "cn_official",
@@ -211,10 +668,13 @@
         "endpoint": "https://open.bigmodel.cn/api/anthropic",
         "homepage": "https://open.bigmodel.cn",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "baidu-qianfan-coding-plan": {
+      "ownerProviderId": "baidu-qianfan",
       "preset": {
         "name": "Baidu Qianfan Coding Plan",
         "category": "cn_official",
@@ -223,10 +683,13 @@
         "endpoint": "https://qianfan.baidubce.com/anthropic/coding",
         "homepage": "https://cloud.baidu.com/product/qianfan_modelbuilder",
         "notes": "from=claudeDesktop,claude",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "baidu-qianfan-token-plan": {
+      "ownerProviderId": "baidu-qianfan",
       "preset": {
         "name": "Baidu Qianfan Token Plan",
         "category": "cn_official",
@@ -235,10 +698,13 @@
         "endpoint": "https://qianfan.baidubce.com/anthropic/tokenplan/personal",
         "homepage": "https://cloud.baidu.com/product/codingplan.html",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "byteplus": {
+      "ownerProviderId": "byteplus",
       "preset": {
         "name": "BytePlus",
         "category": "cn_official",
@@ -247,10 +713,13 @@
         "endpoint": "https://ark.ap-southeast.bytepluses.com/api/coding",
         "homepage": "https://www.byteplus.com/en/product/modelark?utm_campaign=hw&utm_content=ccswitch&utm_medium=devrel_tool_web&utm_source=OWO&utm_term=ccswitch",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "kat-coder": {
+      "ownerProviderId": "kat-coder",
       "preset": {
         "name": "KAT-Coder",
         "category": "cn_official",
@@ -259,10 +728,13 @@
         "endpoint": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints/${ENDPOINT_ID}/claude-code-proxy",
         "homepage": "https://console.streamlake.ai",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "longcat": {
+      "ownerProviderId": "longcat",
       "preset": {
         "name": "Longcat",
         "category": "cn_official",
@@ -271,10 +743,13 @@
         "endpoint": "https://api.longcat.chat/anthropic",
         "homepage": "https://longcat.chat/platform",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "minimax": {
+      "ownerProviderId": "minimax",
       "preset": {
         "name": "MiniMax",
         "category": "cn_official",
@@ -283,10 +758,13 @@
         "endpoint": "https://api.minimaxi.com/anthropic",
         "homepage": "https://platform.minimaxi.com",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "minimax-en": {
+      "ownerProviderId": "minimax",
       "preset": {
         "name": "MiniMax en",
         "category": "cn_official",
@@ -295,10 +773,13 @@
         "endpoint": "https://api.minimax.io/anthropic",
         "homepage": "https://platform.minimax.io",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "qwencloud": {
+      "ownerProviderId": "qwencloud",
       "preset": {
         "name": "QwenCloud",
         "category": "cn_official",
@@ -307,10 +788,13 @@
         "endpoint": "https://dashscope-intl.aliyuncs.com/apps/anthropic",
         "homepage": "https://www.qwencloud.com",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "qwencloud-token-plan": {
+      "ownerProviderId": "qwencloud",
       "preset": {
         "name": "QwenCloud Token Plan",
         "category": "cn_official",
@@ -319,10 +803,13 @@
         "endpoint": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/apps/anthropic",
         "homepage": "https://www.qwencloud.com",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "stepfun": {
+      "ownerProviderId": "stepfun",
       "preset": {
         "name": "StepFun",
         "category": "cn_official",
@@ -331,10 +818,13 @@
         "endpoint": "https://api.stepfun.com/step_plan",
         "homepage": "https://platform.stepfun.com/step-plan",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "stepfun-en": {
+      "ownerProviderId": "stepfun-en",
       "preset": {
         "name": "StepFun en",
         "category": "cn_official",
@@ -343,10 +833,13 @@
         "endpoint": "https://api.stepfun.ai/step_plan",
         "homepage": "https://platform.stepfun.ai/step-plan",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-hunyuan": {
+      "ownerProviderId": "tencent-hunyuan",
       "preset": {
         "name": "Tencent Hunyuan",
         "category": "cn_official",
@@ -355,10 +848,13 @@
         "endpoint": "https://tokenhub.tencentmaas.com/v1",
         "homepage": "https://cloud.tencent.com/product/tokenhub",
         "notes": "from=codex",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-token-plan-enterprise-lite": {
+      "ownerProviderId": "tencent-token-plan",
       "preset": {
         "name": "Tencent Token Plan Enterprise Lite",
         "category": "cn_official",
@@ -367,10 +863,13 @@
         "endpoint": "https://tokenhub.tencentmaas.com/plan/anthropic",
         "homepage": "https://cloud.tencent.com/product/tokenhub",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-token-plan-enterprise-lite-intl": {
+      "ownerProviderId": "tencent-token-plan",
       "preset": {
         "name": "Tencent Token Plan Enterprise Lite (Intl)",
         "category": "cn_official",
@@ -379,10 +878,13 @@
         "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/plan/anthropic",
         "homepage": "https://www.tencentcloud.com/products/tokenhub",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-token-plan-enterprise-pro": {
+      "ownerProviderId": "tencent-token-plan",
       "preset": {
         "name": "Tencent Token Plan Enterprise Pro",
         "category": "cn_official",
@@ -391,10 +893,13 @@
         "endpoint": "https://tokenhub.tencentmaas.com/plan/anthropic",
         "homepage": "https://cloud.tencent.com/product/tokenhub",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-token-plan-enterprise-pro-intl": {
+      "ownerProviderId": "tencent-token-plan",
       "preset": {
         "name": "Tencent Token Plan Enterprise Pro (Intl)",
         "category": "cn_official",
@@ -403,10 +908,13 @@
         "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/plan/anthropic",
         "homepage": "https://www.tencentcloud.com/products/tokenhub",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "tencent-token-plan-intl": {
+      "ownerProviderId": "tencent-token-plan",
       "preset": {
         "name": "Tencent Token Plan (Intl)",
         "category": "cn_official",
@@ -415,10 +923,13 @@
         "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/plan/anthropic",
         "homepage": "https://www.tencentcloud.com/products/tokenhub",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "xiaomi-mimo": {
+      "ownerProviderId": "xiaomi-mimo",
       "preset": {
         "name": "Xiaomi MiMo",
         "category": "cn_official",
@@ -427,10 +938,13 @@
         "endpoint": "https://api.xiaomimimo.com/anthropic",
         "homepage": "https://platform.xiaomimimo.com",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "xiaomi-mimo-token-plan-china": {
+      "ownerProviderId": "xiaomi-mimo",
       "preset": {
         "name": "Xiaomi MiMo Token Plan (China)",
         "category": "cn_official",
@@ -439,10 +953,13 @@
         "endpoint": "https://token-plan-cn.xiaomimimo.com/anthropic",
         "homepage": "https://platform.xiaomimimo.com/#/token-plan",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "zhipu-glm-en": {
+      "ownerProviderId": "zhipu",
       "preset": {
         "name": "Zhipu GLM en",
         "category": "cn_official",
@@ -451,10 +968,13 @@
         "endpoint": "https://api.z.ai/api/anthropic",
         "homepage": "https://z.ai",
         "notes": "from=claude,openclaw",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "anthropic": {
+      "ownerProviderId": "anthropic",
       "preset": {
         "name": "Anthropic",
         "category": "official",
@@ -463,10 +983,13 @@
         "endpoint": "https://api.anthropic.com",
         "homepage": "https://anthropic.com",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "google": {
+      "ownerProviderId": "google",
       "preset": {
         "name": "Google Gemini",
         "category": "official",
@@ -475,10 +998,13 @@
         "endpoint": "https://generativelanguage.googleapis.com",
         "homepage": "https://ai.google.dev",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "openai": {
+      "ownerProviderId": "openai",
       "preset": {
         "name": "OpenAI",
         "category": "official",
@@ -487,10 +1013,13 @@
         "endpoint": "https://api.openai.com",
         "homepage": "https://openai.com",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "azure-openai": {
+      "ownerProviderId": "azure-openai",
       "preset": {
         "name": "Azure OpenAI",
         "category": "third_party",
@@ -499,10 +1028,13 @@
         "endpoint": "https://YOUR_RESOURCE.openai.azure.com",
         "homepage": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
         "notes": "from=baize-hardcoded",
-        "type": "official"
+        "type": "official",
+        "kind": "official",
+        "authMode": "api_key"
       }
     },
     "aicodemirror": {
+      "ownerProviderId": "aicodemirror",
       "preset": {
         "name": "AICodeMirror",
         "category": "third_party",
@@ -511,10 +1043,13 @@
         "endpoint": "https://api.aicodemirror.ai/api/claudecode",
         "homepage": "https://www.aicodemirror.ai",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "aicoding": {
+      "ownerProviderId": "aicoding",
       "preset": {
         "name": "AICoding",
         "category": "third_party",
@@ -523,10 +1058,13 @@
         "endpoint": "https://api.aicoding.inc",
         "homepage": "https://aicoding.inc",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "aigocode": {
+      "ownerProviderId": "aigocode",
       "preset": {
         "name": "AIGoCode",
         "category": "third_party",
@@ -535,10 +1073,13 @@
         "endpoint": "https://api.aigocode.app",
         "homepage": "https://aigocode.app",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "apikey-fun": {
+      "ownerProviderId": "apikey-fun",
       "preset": {
         "name": "APIKEY.FUN",
         "category": "third_party",
@@ -547,10 +1088,13 @@
         "endpoint": "https://api.apikey.fun",
         "homepage": "https://apikey.fun",
         "notes": "from=claude,codex",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "apinebula": {
+      "ownerProviderId": "apinebula",
       "preset": {
         "name": "APINebula",
         "category": "third_party",
@@ -559,10 +1103,13 @@
         "endpoint": "https://apinebula.ai",
         "homepage": "https://apinebula.ai",
         "notes": "from=claude,codex",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "aws-bedrock-aksk": {
+      "ownerProviderId": "aws-bedrock",
       "preset": {
         "name": "AWS Bedrock (AKSK)",
         "category": "third_party",
@@ -571,10 +1118,13 @@
         "endpoint": "https://bedrock-runtime.${AWS_REGION}.amazonaws.com",
         "homepage": "https://aws.amazon.com/bedrock/",
         "notes": "from=claude",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "aws-bedrock-api-key": {
+      "ownerProviderId": "aws-bedrock",
       "preset": {
         "name": "AWS Bedrock (API Key)",
         "category": "third_party",
@@ -583,10 +1133,13 @@
         "endpoint": "https://bedrock-runtime.${AWS_REGION}.amazonaws.com",
         "homepage": "https://aws.amazon.com/bedrock/",
         "notes": "from=claude",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "claudecn": {
+      "ownerProviderId": "claudecn",
       "preset": {
         "name": "ClaudeCN",
         "category": "third_party",
@@ -595,10 +1148,13 @@
         "endpoint": "https://claudecn.top",
         "homepage": "https://claudecn.top",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "codex": {
+      "ownerProviderId": "codex",
       "preset": {
         "name": "Codex",
         "category": "third_party",
@@ -607,10 +1163,13 @@
         "endpoint": "https://chatgpt.com/backend-api/codex",
         "homepage": "https://openai.com/chatgpt/pricing",
         "notes": "from=claudeDesktop,claude",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "crazyrouter": {
+      "ownerProviderId": "crazyrouter",
       "preset": {
         "name": "CrazyRouter",
         "category": "third_party",
@@ -619,10 +1178,13 @@
         "endpoint": "https://cn.crazyrouter.com",
         "homepage": "https://www.crazyrouter.com",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "cubence": {
+      "ownerProviderId": "cubence",
       "preset": {
         "name": "Cubence",
         "category": "third_party",
@@ -631,10 +1193,13 @@
         "endpoint": "https://api.cubence.com",
         "homepage": "https://cubence.com",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "e-flowcode": {
+      "ownerProviderId": "e-flowcode",
       "preset": {
         "name": "E-FlowCode",
         "category": "third_party",
@@ -643,10 +1208,13 @@
         "endpoint": "https://e-flowcode.cc",
         "homepage": "https://e-flowcode.cc",
         "notes": "from=claude,codex",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "etok-ai": {
+      "ownerProviderId": "etok-ai",
       "preset": {
         "name": "ETok.ai",
         "category": "third_party",
@@ -655,10 +1223,13 @@
         "endpoint": "https://api.etok.ai",
         "homepage": "https://etok.ai",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "github-copilot": {
+      "ownerProviderId": "github-copilot",
       "preset": {
         "name": "GitHub Copilot",
         "category": "third_party",
@@ -667,10 +1238,13 @@
         "endpoint": "https://api.githubcopilot.com",
         "homepage": "https://github.com/features/copilot",
         "notes": "from=claudeDesktop,claude",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "micu": {
+      "ownerProviderId": "micu",
       "preset": {
         "name": "Micu",
         "category": "third_party",
@@ -679,10 +1253,13 @@
         "endpoint": "https://www.micuapi.ai",
         "homepage": "https://www.micuapi.ai",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "opencode-go": {
+      "ownerProviderId": "opencode-go",
       "preset": {
         "name": "OpenCode Go",
         "category": "third_party",
@@ -691,10 +1268,13 @@
         "endpoint": "https://opencode.ai/zen/go",
         "homepage": "https://opencode.ai/go",
         "notes": "from=claude,opencode",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "packycode": {
+      "ownerProviderId": "packycode",
       "preset": {
         "name": "PackyCode",
         "category": "third_party",
@@ -703,10 +1283,13 @@
         "endpoint": "https://www.packyapi.ai",
         "homepage": "https://www.packyapi.ai",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "patewayai": {
+      "ownerProviderId": "patewayai",
       "preset": {
         "name": "PatewayAI",
         "category": "third_party",
@@ -715,10 +1298,13 @@
         "endpoint": "https://api.pateway.ai",
         "homepage": "https://pateway.ai",
         "notes": "from=claude,grokBuild",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "relaxycode": {
+      "ownerProviderId": "relaxycode",
       "preset": {
         "name": "RelaxyCode",
         "category": "third_party",
@@ -727,10 +1313,13 @@
         "endpoint": "https://www.relaxycode.com",
         "homepage": "https://www.relaxycode.com",
         "notes": "from=claude,grokBuild",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "rightcode": {
+      "ownerProviderId": "rightcode",
       "preset": {
         "name": "RightCode",
         "category": "third_party",
@@ -739,10 +1328,13 @@
         "endpoint": "https://www.rightapi.ai/claude",
         "homepage": "https://www.rightapi.ai",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "sssaicode": {
+      "ownerProviderId": "sssaicode",
       "preset": {
         "name": "SSSAiCode",
         "category": "third_party",
@@ -751,10 +1343,13 @@
         "endpoint": "https://node-hk.sssaicodeapi.com/api",
         "homepage": "https://sssaicodeapi.com",
         "notes": "from=claude,openclaw",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "sudocode-chat": {
+      "ownerProviderId": "sudocode-chat",
       "preset": {
         "name": "SudoCode.chat",
         "category": "third_party",
@@ -763,10 +1358,13 @@
         "endpoint": "https://api.sudocode.chat",
         "homepage": "https://sudocode.chat",
         "notes": "from=claude,codex",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "sudocode-us": {
+      "ownerProviderId": "sudocode-us",
       "preset": {
         "name": "SudoCode.us",
         "category": "third_party",
@@ -775,10 +1373,13 @@
         "endpoint": "https://sudocode.us",
         "homepage": "https://sudocode.us",
         "notes": "from=claude,codex",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "gemini-native": {
+      "ownerProviderId": "gemini-native",
       "preset": {
         "name": "Gemini Native",
         "category": "third_party",
@@ -787,10 +1388,13 @@
         "endpoint": "https://generativelanguage.googleapis.com",
         "homepage": "https://ai.google.dev/gemini-api",
         "notes": "from=claudeDesktop,claude",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "xai-grok": {
+      "ownerProviderId": "xai-grok",
       "preset": {
         "name": "xAI (Grok)",
         "category": "third_party",
@@ -799,10 +1403,13 @@
         "endpoint": "https://api.x.ai/v1",
         "homepage": "https://x.ai/grok",
         "notes": "from=claude,grokBuild",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "xai-grok-oauth": {
+      "ownerProviderId": "xai-grok",
       "preset": {
         "name": "xAI (Grok) OAuth",
         "category": "third_party",
@@ -811,10 +1418,13 @@
         "endpoint": "https://api.x.ai/v1",
         "homepage": "https://x.ai/grok",
         "notes": "from=codex",
-        "type": "relay"
+        "type": "relay",
+        "kind": "relay",
+        "authMode": "api_key"
       }
     },
     "lmstudio": {
+      "ownerProviderId": "lmstudio",
       "preset": {
         "name": "LM Studio (Local)",
         "category": "third_party",
@@ -823,10 +1433,13 @@
         "endpoint": "http://localhost:1234/v1",
         "homepage": "https://lmstudio.ai",
         "notes": "from=baize-hardcoded",
-        "type": "local"
+        "type": "local",
+        "kind": "local",
+        "authMode": "local_endpoint"
       }
     },
     "ollama": {
+      "ownerProviderId": "ollama",
       "preset": {
         "name": "Ollama (Local)",
         "category": "third_party",
@@ -835,10 +1448,13 @@
         "endpoint": "http://localhost:11434/v1",
         "homepage": "https://ollama.com",
         "notes": "from=baize-hardcoded",
-        "type": "local"
+        "type": "local",
+        "kind": "local",
+        "authMode": "local_endpoint"
       }
     },
     "vllm": {
+      "ownerProviderId": "vllm",
       "preset": {
         "name": "vLLM (Local)",
         "category": "third_party",
@@ -847,10 +1463,13 @@
         "endpoint": "http://localhost:8000/v1",
         "homepage": "https://docs.vllm.ai",
         "notes": "from=baize-hardcoded",
-        "type": "local"
+        "type": "local",
+        "kind": "local",
+        "authMode": "local_endpoint"
       }
     },
     "compshare": {
+      "ownerProviderId": "compshare",
       "preset": {
         "name": "Compshare",
         "category": "aggregator",
@@ -859,10 +1478,13 @@
         "endpoint": "https://api.modelverse.cn",
         "homepage": "https://www.compshare.cn",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "compshare-coding-plan": {
+      "ownerProviderId": "compshare",
       "preset": {
         "name": "Compshare Coding Plan",
         "category": "aggregator",
@@ -871,10 +1493,13 @@
         "endpoint": "https://cp.compshare.cn",
         "homepage": "https://www.compshare.cn",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "dmxapi": {
+      "ownerProviderId": "dmxapi",
       "preset": {
         "name": "DMXAPI",
         "category": "aggregator",
@@ -883,10 +1508,13 @@
         "endpoint": "https://www.dmxapi.cn",
         "homepage": "https://www.dmxapi.cn",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "modelscope": {
+      "ownerProviderId": "modelscope",
       "preset": {
         "name": "ModelScope",
         "category": "aggregator",
@@ -895,10 +1523,13 @@
         "endpoint": "https://api-inference.modelscope.cn",
         "homepage": "https://modelscope.cn",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "siliconflow": {
+      "ownerProviderId": "siliconflow",
       "preset": {
         "name": "SiliconFlow",
         "category": "aggregator",
@@ -907,10 +1538,13 @@
         "endpoint": "https://api.siliconflow.cn",
         "homepage": "https://siliconflow.cn",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "teamorouter": {
+      "ownerProviderId": "teamorouter",
       "preset": {
         "name": "TeamoRouter",
         "category": "aggregator",
@@ -919,10 +1553,13 @@
         "endpoint": "https://api.teamorouter.cn",
         "homepage": "https://teamorouter.cn",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "a6api": {
+      "ownerProviderId": "a6api",
       "preset": {
         "name": "A6API",
         "category": "aggregator",
@@ -931,10 +1568,13 @@
         "endpoint": "https://api.a6api.com",
         "homepage": "https://www.a6api.com",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "aihubmix": {
+      "ownerProviderId": "aihubmix",
       "preset": {
         "name": "AiHubMix",
         "category": "aggregator",
@@ -943,10 +1583,13 @@
         "endpoint": "https://aihubmix.com",
         "homepage": "https://aihubmix.com",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "atlascloud": {
+      "ownerProviderId": "atlascloud",
       "preset": {
         "name": "AtlasCloud",
         "category": "aggregator",
@@ -955,10 +1598,13 @@
         "endpoint": "https://api.atlascloud.ai",
         "homepage": "https://www.atlascloud.ai/console/coding-plan",
         "notes": "from=claude,codex",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "ccsub": {
+      "ownerProviderId": "ccsub",
       "preset": {
         "name": "CCSub",
         "category": "aggregator",
@@ -967,10 +1613,13 @@
         "endpoint": "https://www.ccsub.net",
         "homepage": "https://www.ccsub.net",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "cherryin": {
+      "ownerProviderId": "cherryin",
       "preset": {
         "name": "CherryIN",
         "category": "aggregator",
@@ -979,10 +1628,13 @@
         "endpoint": "https://open.cherryin.net",
         "homepage": "https://open.cherryin.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "claudeapi": {
+      "ownerProviderId": "claudeapi",
       "preset": {
         "name": "ClaudeAPI",
         "category": "aggregator",
@@ -991,10 +1643,13 @@
         "endpoint": "https://gw.apito.ai",
         "homepage": "https://www.apito.ai",
         "notes": "from=claudeDesktop,claude",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "code0": {
+      "ownerProviderId": "code0",
       "preset": {
         "name": "Code0",
         "category": "aggregator",
@@ -1003,10 +1658,13 @@
         "endpoint": "https://code0.ai",
         "homepage": "https://code0.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "fennoai": {
+      "ownerProviderId": "fennoai",
       "preset": {
         "name": "FennoAI",
         "category": "aggregator",
@@ -1015,10 +1673,13 @@
         "endpoint": "https://api.fenno.ai",
         "homepage": "https://api.fenno.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "jiekou-ai": {
+      "ownerProviderId": "jiekou-ai",
       "preset": {
         "name": "JieKou AI",
         "category": "aggregator",
@@ -1027,10 +1688,13 @@
         "endpoint": "https://api.jiekou.ai/anthropic",
         "homepage": "https://jiekou.ai/#model-library",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "novita-ai": {
+      "ownerProviderId": "novita-ai",
       "preset": {
         "name": "Novita AI",
         "category": "aggregator",
@@ -1039,10 +1703,13 @@
         "endpoint": "https://api.novita.ai/anthropic",
         "homepage": "https://novita.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "nvidia": {
+      "ownerProviderId": "nvidia",
       "preset": {
         "name": "Nvidia",
         "category": "aggregator",
@@ -1051,10 +1718,13 @@
         "endpoint": "https://integrate.api.nvidia.com",
         "homepage": "https://build.nvidia.com",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "pipellm": {
+      "ownerProviderId": "pipellm",
       "preset": {
         "name": "PIPELLM",
         "category": "aggregator",
@@ -1063,10 +1733,13 @@
         "endpoint": "https://cc-api.pipellm.ai",
         "homepage": "https://code.pipellm.ai",
         "notes": "from=claude,codex",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "ppio": {
+      "ownerProviderId": "ppio",
       "preset": {
         "name": "PPIO",
         "category": "aggregator",
@@ -1075,10 +1748,13 @@
         "endpoint": "https://api.ppio.com/anthropic",
         "homepage": "https://ppio.com",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "qiniu": {
+      "ownerProviderId": "qiniu",
       "preset": {
         "name": "Qiniu",
         "category": "aggregator",
@@ -1087,10 +1763,13 @@
         "endpoint": "https://api.qnaigc.com",
         "homepage": "https://s.qiniu.com/nMvAvy",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "runapi": {
+      "ownerProviderId": "runapi",
       "preset": {
         "name": "RunAPI",
         "category": "aggregator",
@@ -1099,10 +1778,13 @@
         "endpoint": "https://runapi.host",
         "homepage": "https://runapi.host",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "shengsuanyun": {
+      "ownerProviderId": "shengsuanyun",
       "preset": {
         "name": "Shengsuanyun",
         "category": "aggregator",
@@ -1111,10 +1793,13 @@
         "endpoint": "https://router.shengsuanyun.com/api",
         "homepage": "https://www.shengsuanyun.com/?from=CH_4HHXMRYF",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "siliconflow-en": {
+      "ownerProviderId": "siliconflow",
       "preset": {
         "name": "SiliconFlow en",
         "category": "aggregator",
@@ -1123,10 +1808,13 @@
         "endpoint": "https://api.siliconflow.com",
         "homepage": "https://siliconflow.com",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "subrouter": {
+      "ownerProviderId": "subrouter",
       "preset": {
         "name": "SubRouter",
         "category": "aggregator",
@@ -1135,10 +1823,13 @@
         "endpoint": "https://subrouter.ai",
         "homepage": "https://subrouter.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "therouter": {
+      "ownerProviderId": "therouter",
       "preset": {
         "name": "TheRouter",
         "category": "aggregator",
@@ -1147,10 +1838,13 @@
         "endpoint": "https://api.therouter.ai",
         "homepage": "https://therouter.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "xycai": {
+      "ownerProviderId": "xycai",
       "preset": {
         "name": "XycAi",
         "category": "aggregator",
@@ -1159,10 +1853,13 @@
         "endpoint": "https://apicdn.xycai.us",
         "homepage": "https://xycai.us",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "zetaapi": {
+      "ownerProviderId": "zetaapi",
       "preset": {
         "name": "ZetaAPI",
         "category": "aggregator",
@@ -1171,10 +1868,13 @@
         "endpoint": "https://api.zetaapi.ai",
         "homepage": "https://zetaapi.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "amux": {
+      "ownerProviderId": "amux",
       "preset": {
         "name": "Amux",
         "category": "aggregator",
@@ -1183,10 +1883,13 @@
         "endpoint": "https://api.amux.ai",
         "homepage": "https://amux.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     },
     "openrouter": {
+      "ownerProviderId": "openrouter",
       "preset": {
         "name": "OpenRouter",
         "category": "aggregator",
@@ -1195,7 +1898,9 @@
         "endpoint": "https://openrouter.ai/api",
         "homepage": "https://openrouter.ai",
         "notes": "from=claude,openclaw",
-        "type": "aggregator"
+        "type": "aggregator",
+        "kind": "aggregator",
+        "authMode": "api_key"
       }
     }
   }
